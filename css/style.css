@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/*:: 共通 :::::::::::::::::::::::*/
+body {
+	margin : 0;
+	padding : 0; 
+
+	font-family : "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3",Hiragino Kaku Gothic Pro,"ＭＳ Ｐゴシック",sans-serif;
+}
+
+i {
+	display : inline-block;
+}
+
+a img {
+	        transition : 0.3s ease-in-out; 
+
+	-webkit-transition : 0.3s ease-in-out;
+}
+
+a:link {
+	color : #fff;
+	text-decoration : underline;
+}
+
+a:visited {
+	color : #eee;
+	text-decoration : none;
+}
+
+a:hover {
+	color : #fff;
+	text-decoration : none;
+}
+
+a:hover img {
+	opacity : 0.6;
+	filter : alpha(opacity=70);
+}
+
+a.windowOpen[target]::after {
+	margin : 0 0 0 3px; 
+	content : url("../images/windowopen.png");
+}
+
+.clearfix {
+	*zoom : 1;
+}
+
+.clearfix:after {
+	display : block;
+	clear : both;
+	visibility : hidden;
+	height : 0px;
+	font-size : 0; 
+	content : ".";
+}
+
+/*:: ヘッダー :::::::::::::::::::::::*/
+.head_line {
+	height : 5px;
+	background-color : #009245;
+
+	        animation : bg-color 10s infinite;
+	-webkit-animation : bg-color 10s infinite;
+}
+
+@-webkit-keyframes bg-color {
+	0% {
+		background-color : #009245;
+	}
+	20% {
+		background-color : #2e9100;
+	}
+	60% {
+		background-color : #9fba00;
+	}
+	100% {
+		background-color : #009245;
+	}
+}
+
+@keyframes bg-color {
+	0% {
+		background-color : #009245;
+	}
+	20% {
+		background-color : #2e9100;
+	}
+	60% {
+		background-color : #9fba00;
+	}
+	100% {
+		background-color : #009245;
+	}
+}
+
+/*スマホのとき*/
+@media screen and (max-width:768px){
+header {
+	width : 100%;
+	margin : 0 auto;
+	padding : 20px 0 30px 0;
+}
+.header_ttlimg{
+	height: 230px;
+	position: relative;
+	overflow: hidden;
+}
+.trim img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+}
+
+/*PCのとき*/
+@media screen and (min-width:769px){
+header {
+	width : 960px;
+	margin : 0 auto;
+	padding : 20px 0 30px 0;
+}
+}
+
+h1 {
+	margin : 10px 0 10px 0;
+}
+
+/*:: メインエリア :::::::::::::::::::::::*/
+/*スマホのとき*/
+@media screen and (max-width:768px){
+section {
+	width : 96%;
+	margin : 0 auto;
+	padding : 20px 2% 40px;
+	color : #fff;
+}
+}
+
+/*PCのとき*/
+@media screen and (min-width:769px){
+section {
+	width : 960px;
+	margin : 0 auto;
+	padding : 20px 0 40px 0;
+	color : #fff;
+}
+}
+.bg_green01 {
+	background : #8cc63f;
+}
+
+.bg_green02 {
+	background : #39b54a;
+}
+
+h2 {
+	margin-bottom : 20px; 
+	padding-bottom : 10px;
+	border-bottom : 2px solid #fff;
+	font-weight : bold;
+	font-size : 23px;
+	text-align : center;
+}
+
+table {
+	width : 95%;
+	margin : 0 auto;
+
+	border-collapse : collapse;
+	border-spacing : 0;
+}
+
+table tr th,
+table tr td {
+	padding : 10px; 
+	border : 1px solid #fff;
+}
+
+table tr th {
+	background-color : rgba(255, 255, 255, 0.2);
+}
+
+.main_copytxt {
+	margin : 0 0 20px 0; 
+	font-size : 18px;
+	text-align : center;
+}
+
+/*:: フッターエリア :::::::::::::::::::::::*/
+footer {
+	padding-top : 20px; 
+	background : #009245;
+}
+
+.footer_logo {
+	text-align : center;
+}
+
+.copyright {
+	font-size : 11px;
+	text-align : center;
+}
